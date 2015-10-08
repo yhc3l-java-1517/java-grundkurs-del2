@@ -15,7 +15,7 @@ public final class Zoo
 		domesticAnimals = new AnimalStorage(true);
 	}
 
-	public void addAnimal(Animal animal)
+	public void addAnimal(final Animal animal)
 	{
 		if (animal instanceof WildAnimal)
 		{
@@ -33,7 +33,7 @@ public final class Zoo
 		hearAnimalSound(domesticAnimals.getAnimals());
 	}
 
-	private void hearAnimalSound(Animal[] animals)
+	private void hearAnimalSound(final Animal[] animals)
 	{
 		for (Animal animal : animals)
 		{

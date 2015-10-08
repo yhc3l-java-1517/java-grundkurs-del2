@@ -15,7 +15,7 @@ public final class AnimalStorage
 	public AnimalStorage(boolean disallowDangerousAnimals)
 	{
 		this.disallowDangerousAnimals = disallowDangerousAnimals;
-		this.animals = new Animal[5];
+		this.animals = new Animal[INCREASE_FACTOR];
 		this.nextFreeIndex = 0;
 	}
 
@@ -41,7 +41,7 @@ public final class AnimalStorage
 	
 	public Animal[] getAnimals()
 	{
-		// Return a copy to prevent outside manipulation of internal data
+		// Returns a copy to prevent outside manipulation of internal data
 		return Arrays.copyOf(animals, animals.length);
 	}
 	
