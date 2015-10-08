@@ -9,10 +9,10 @@ public final class Zoo
 	private final AnimalStorage wildAnimals;
 	private final AnimalStorage domesticAnimals;
 
-	public Zoo()
+	public Zoo(boolean disallowDangerousAnimals)
 	{
-		wildAnimals = new AnimalStorage(true);
-		domesticAnimals = new AnimalStorage(true);
+		wildAnimals = new AnimalStorage(disallowDangerousAnimals);
+		domesticAnimals = new AnimalStorage(disallowDangerousAnimals);
 	}
 
 	public void addAnimal(final Animal animal)

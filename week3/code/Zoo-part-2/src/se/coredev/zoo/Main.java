@@ -9,7 +9,8 @@ public final class Main
 {
 	public static void main(String[] args)
 	{
-		Zoo zoo = new Zoo();
+		boolean disallowDangerousAnimals = true;
+		Zoo zoo = new Zoo(disallowDangerousAnimals);
 		
 		zoo.addAnimal(new Cat("1"));
 		zoo.addAnimal(new Cat("2"));
